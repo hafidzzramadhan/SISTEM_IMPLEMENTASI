@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.sitem_implementasixg3"
-    compileSdk = 34
+    compileSdk = 35  // Perbarui compileSdk ke 23
 
     defaultConfig {
         applicationId = "com.example.sitem_implementasixg3"
-        minSdk = 21
-        targetSdk = 34
+        minSdk = 21 // Pertahankan minSdk di 21, karena kamu ingin mendukung perangkat lama
+        targetSdk = 35 // Perbarui targetSdk ke 23
         versionCode = 1
         versionName = "1.0"
 
@@ -29,19 +29,24 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.1"  // Perbarui ke versi yang sesuai dengan Compose
     }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
